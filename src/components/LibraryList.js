@@ -18,7 +18,7 @@ class LibraryList extends Component {
   }
 
   render() {
-    console.log(this.props);
+    //console.log(this.props);
     return (
       <ListView
         dataSource={this.dataSource}
@@ -32,7 +32,7 @@ class LibraryList extends Component {
 // state: global state object (application state in redux store)
 // return: the new state object
 const mapStateToProps = (state) => {
-  console.log(state);
+  //console.log(state);
   return {
     libraries: state.libraries,
   };
