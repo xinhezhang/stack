@@ -9,9 +9,10 @@ import { Header } from './components/common';
 import LibraryList from './components/LibraryList';
 
 const App = () => {
+  // "{ flex: 1 }" means fill out the whole container (screen)
   return (
     <Provider store={createStore(reducers)}>
-      <View>
+      <View style={{ flex: 1 }}>
         <Header headerText='Stack' />
         <LibraryList />
       </View>
