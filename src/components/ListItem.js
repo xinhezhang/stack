@@ -8,11 +8,16 @@ import * as actions from '../actions';
 
 class ListItem extends Component {
   renderDescription() {
+    const { descriptionStyle } = styles;
     const { library, expanded } = this.props;
 
     if (expanded) {
       return (
-        <Text>{library.description}</Text>
+        <CardSection>
+          <Text style={descriptionStyle}>
+            {library.description}
+          </Text>
+        </CardSection>
       );
     }
   }
@@ -41,8 +46,15 @@ class ListItem extends Component {
 
 const styles = {
   titleStyle: {
-    fontSize: 18,
+    fontSize: 20,
     paddingLeft: 15,
+    paddingTop: 5,
+    paddingBottom: 5,
+  },
+  descriptionStyle: {
+    flex: 1,
+    padding: 10,
+    fontSize: 16,
   },
 };
 
