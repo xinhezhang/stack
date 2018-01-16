@@ -48,7 +48,7 @@ const styles = {
 
 const mapStateToProps = (state) => {
   return {
-    selectLibraryId: state.selectLibraryId,
+    selectedLibraryId: state.selectedLibraryId,   // name MUST match
   };
 };
 
